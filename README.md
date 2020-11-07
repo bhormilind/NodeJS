@@ -5,3 +5,10 @@
 4) path
 5) os
 
+===========
+ Modularazation of the code (Chapter---> 37)
+
+1) module.exports = functionName
+2) then import the exported module using  ' const constName = require('./jsfileName'); '
+
+
