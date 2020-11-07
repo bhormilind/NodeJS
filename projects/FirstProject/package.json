@@ -1,0 +1,20 @@
+{
+  "name": "firstproject",
+  "version": "1.0.0",
+  "description": "A demo NodeJs Application",
+  "main": "FirstNode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node FirstNode.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhormilind/NodeJs.git"
+  },
+  "author": "Milind Bhor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhormilind/NodeJs/issues"
+  },
+  "homepage": "https://github.com/bhormilind/NodeJs#readme"
+}

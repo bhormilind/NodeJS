@@ -11,4 +11,10 @@
 1) module.exports = functionName
 2) then import the exported module using  ' const constName = require('./jsfileName'); '
 
+===========
+
+Installing npm -package.json
+1) npm init
+2) Add script to "Scripts"
+===========
 
