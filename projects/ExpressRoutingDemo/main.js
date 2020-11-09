@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 const adminRoutes = require('./routes/admin');
 const shopping = require('./routes/shopping');
@@ -7,6 +8,7 @@ const app = express();
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static(path.join(__dirname,'public')));
 
 app.use('/admin',adminRoutes);
 app.use(shopping);
@@ -14,7 +16,7 @@ app.use(shopping);
 
 /// 404 -non finding routes
 app.use((req,res,next) => {
-    res.status(404).send('No URL found . . . ');
+    res.status(404).sendFile(path.join(__dirname,'views','404.html'));
 });
 
 app.listen(4000);
